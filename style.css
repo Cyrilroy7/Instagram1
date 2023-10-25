@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    display: flex;
+    
+}
+header{
+    width:18vw;
+    height: 100vh;
+    border-right: 0.5px solid #ccc;
+    position: fixed;
+    z-index: 2;
+}
+.sidebar{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 20px;
+
+}
+.logo1{
+    padding: 10px auto;
+    min-width: 80px;
+    max-width: 156px;
+    height: 36px; 
+    
+}
+.logo1 img{
+    width: 100%;
+    background-size: cover;
+    flex: 1 1 50px ;
+}
+.logo2{
+    padding: 10px auto;
+    min-width: 80px;
+    max-width: 156px;
+    height: 36px; 
+    display: none;
+}
+.logo2 img{
+    width: 100%;
+    background-size: cover;
+    flex: 1 1 50px ;
+    max-width: 30px;
+}
+.sideitems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1760px;
+    width: 100%;
+}
+.side{
+    padding-left: 10px;
+    padding-top: 10px;
+   display: flex;
+   justify-content: flex-start;
+   gap: 15px;
+   height: 50px;
+   width: 100%;
+   overflow: hidden;
+}
+.side:hover{
+    background-color: #9191913d;
+    border-radius: 10px;
+
+}
+
+.home{
+    align-self: center;
+}
+.home i{
+    margin-top: 3px;
+    width: 20px;
+    height: 100%;   
+}
+.home p{
+    font-size: 16px;
+    height: 100%;
+}
+.search i{
+    font-weight: 700;
+    margin-top: 4px;
+    width: 20px;
+    height: 100%; 
+}
+.search p{
+    font-size: 16px;
+    height: 100%;
+}
+.explore i{
+    font-weight: 700;
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.explore p{
+    font-size: 16px;
+    height: 90%;
+}
+.reels{
+    padding-top: 10px;
+    padding-left: 10px;
+    align-items: flex-start;
+}
+.reels img{
+    margin-top: 1.5px;
+   
+    background-size: cover;
+    width: 18px;
+    height: 19px;
+
+}
+.reels p{
+    padding-left: 3px;
+    font-size: 16px;
+    height: 90%;
+}
+.messages i{
+    font-weight: 700;
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.messages p{
+    font-size: 16px;
+    height: 90%;
+}
+.notifications p{
+    font-size: 16px;
+    height: 100%;
+}
+.notifications i{
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.create p{
+    font-size: 16px;
+    height: 100%;
+}
+.create i{
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.profile{
+    padding-left: 10px;
+    padding-top: 10px;
+    align-items: flex-start;
+    z-index: 1;
+}
+.profile img{
+    margin-top: 1.5px;
+    background-size: cover;
+    width: 18px;
+    height: 19px;
+    border-radius: 50%;
+
+}
+.profile p{
+    padding-left: 3px;
+    font-size: 16px;
+    height: 90%;
+}
+.down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 440px;
+    width: 100%;
+}
+.threads p{
+    font-size: 16px;
+    height: 100%;
+}
+.threads i{
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.menu p{
+    font-size: 16px;
+    height: 100%;
+}
+.menu i{
+    margin-top: 5px;
+    width: 20px;
+    height: 100%; 
+}
+.fullmain{
+    margin-left: 20%;
+    width: 82vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main{
+    margin: 5% 10%;
+    width: 100%;
+    height: 100%;
+    
+}
+.mainpro{
+    width: 100%;
+    height: 287px;
+    display: flex;
+    padding: 5px;
+    
+}
+.propic{
+    padding: 50px;
+    width: 292px;
+    height: 292px;
+    align-self: ce;
+}
+.propic img{
+   padding: 2px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    border-radius: 50%;
+    outline: 3px solid rgb(209, 43, 43);
+}
+.promain{
+    width: 578px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.prohead{
+    width: 578px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.name{
+    width: 140px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 20px;
+}
+.follow{
+    padding-top: 5px;
+    text-align: center;
+    width: 120px;
+    height: 100%;
+    background-color:#9191913f ;
+    border-radius:5px ;
+}
+.follow:hover{
+    background-color:#91919166 ;
+}
+.msg{
+    padding-top: 5px;
+    text-align: center;
+    width: 100px;
+    height: 100%;
+    background-color:#9191913f ;
+    border-radius:5px ;
+}
+.msg:hover{
+    background-color:#91919166 ;
+}
+.add{
+    padding-top: 5px;
+    text-align: center;
+    width: 50px;
+    height: 100%;
+    background-color:#9191913f ;
+    border-radius:5px ;
+}
+.add:hover{
+    background-color:#91919166 ;
+}
+.options{
+    text-align: center;
+    padding-top: 5px;
+    width:50px;
+    height: 100%;
+}
+.propost{
+    padding-top:10px ;
+    width: 578px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.post{
+    width: 120px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.fol{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.folw{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+}
+.weight{
+    font-weight: 600;
+}
+.profoot{
+    width: 578px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.fhead{
+    font-weight: 550;
+}
+.probio{
+    width: 578px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.biohead{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #615a5a;
+}
+.biocontent{
+    font-size: 0.9rem;
+}
+.biocontent a{
+    color: #00376B;
+    font-weight: 500;
+}
+.biomutual{
+    margin-top: 10px;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    gap: 5px;
+    font-size: 0.85rem;
+}
+.highlights{
+    margin-top: 40px;
+    padding-right: 20%;
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+.high{
+    width: 115px;
+    height: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img1 img{
+   padding: 2px;
+    width: 87px;
+    height: 87px ;
+    background-size: cover;
+    border-radius: 50%;
+    border: 0.5px solid #ccc;
+}
+.con1 p{
+    text-align: center;
+    font-size: 0.8rem;
+    width: 115px;
+    height: 20px;
+}
+
+.main-gallery{
+    margin: 5% 10%;
+    height: auto;
+    width: 100%;
+    padding-right: 20%;
+}
+.gal-head{
+    border-top: 0.5px solid #ccc;
+    width: 100%;
+    height: 53px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 0.85rem;
+    color: #615a5a;
+}
+.gal-content{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.gal1{
+    width: 33.33%;
+    height: 33.33%;
+    flex: 1 1 320px;
+    overflow: hidden;
+}
+.gal1 img{
+    width: 320px;
+    height: 320px;
+    background-size: cover;
+    
+}
+
+
+.footer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.foot1{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #615a5a;
+    font-size: 0.75rem;
+}
+.foot1-1{
+    width: auto;
+    height: 100%;
+}
+.foot1-1 select{
+    border: none;
+    font-size: 0.75rem;
+    color: #615a5a;
+}
+@media screen and (max-width:800px) {
+    header .sideitems  p{
+        display: none;
+    }
+    header .sidedown  p{
+        display: none;
+    }
+    .sidebar{
+        position: fixed;
+        
+    }
+    .mainpro{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+    }
+    .profoot{
+        display: none;
+    }
+    .probio{
+        display: none;
+    }
+    .logo1{
+        display: none;
+    }
+    .logo2{
+        display: block;
+        
+    }
+}
